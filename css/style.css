@@ -48,9 +48,9 @@
 }
 
 .rightNav {
-    /*background-color:blueviolet;*/
     width: 50%;
     text-align: right;
+    padding: 0 23px;
 }
 
 #search {
@@ -98,4 +98,39 @@
     border-radius: 150px;
     display: block;
     margin: auto;
+}
+.text-big{
+    font-size: 50px;
+}
+
+.text-small{
+    font-size: 20px;
+
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: None;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.secRight{
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
