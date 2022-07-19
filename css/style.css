@@ -18,6 +18,11 @@
 
 .navbar {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
 }
 
 .nav-list {
@@ -67,6 +72,9 @@
     align-items: center;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
 }
 
 .firstSection{
@@ -82,6 +90,12 @@
 
 .secondHalf{
     width: 30%;
-    
+}
 
+.secondHalf img{
+    width: 70%;
+    border: 4px SOLID white;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
 }
