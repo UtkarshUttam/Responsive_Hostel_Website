@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +24,7 @@
     position: sticky;
     top: 0;
     cursor: pointer;
+    
 }
 
 .nav-list {
@@ -109,13 +111,14 @@
 }
 
 .btn{
-    padding: 8px 20px;
+    padding: 18px 30px;
     margin: 7px 0;
     border: 2px solid white;
     border-radius: 8px;
     background: None;
     color: white;
     cursor: pointer;
+    
 }
 
 .btn-sm{
@@ -128,9 +131,23 @@
     color: black;
 }
 
-.secRight{
+.section{
     height: 500px;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;
 }
