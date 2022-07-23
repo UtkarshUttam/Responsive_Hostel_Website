@@ -359,3 +359,53 @@
   .fa-google-plus {
     color: #dd4b39;
   }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Alternate Gothic;
+    background: url("/media/img2.jpg");
+    background-size: cover;
+  }
+  .container {
+    height: 600px;
+    width: 600px;
+    background: whitesmoke;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    
+  }
+  .container p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .input, .area{
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ECF0F1;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: times;
+    font-size: 16px;
+    transition: all 0.5s ease;
+  }
+  .name .input
+  {
+    width: 39.5%;
+    float: left;
+  }
+  .area{
+    height: 200px;
+  }
+  .btn{
+    text-align: center;
+  }
+  .btn1{
+    width: 200px;
+    height: 50px;
+  }
