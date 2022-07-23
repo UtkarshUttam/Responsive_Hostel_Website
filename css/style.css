@@ -70,6 +70,12 @@
     background-blend-mode: darken;
 }
 
+.bg-about{
+  background:url('../media/635b6e3b30bfeae7b713cb8162aa2c9a.jpg');
+  background-size:cover;
+  background-blend-mode: darken;
+}
+
 .box-main {
     display: flex;
     justify-content: center;
@@ -171,7 +177,7 @@
     color: #fff;
     font-size: 60px;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Josefin Sans', sans-serif;
@@ -353,4 +359,3 @@
   .fa-google-plus {
     color: #dd4b39;
   }
-  
