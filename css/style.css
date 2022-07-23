@@ -31,7 +31,7 @@
   background: rgba(0, 0, 0, 0.9);
 }
 .nav-list {
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
 }
@@ -52,7 +52,7 @@
 }
 
 .rightNav {
-    width: 50%;
+    width: 30%;
     text-align: right;
     padding: 0 23px;
 }
