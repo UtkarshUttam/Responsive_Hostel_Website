@@ -359,11 +359,11 @@
   .fa-google-plus {
     color: #dd4b39;
   }
-  * {
+  /* {
     margin: 0;
     padding: 0;
   }
-  body {
+  .contact-bg{
     font-family: Alternate Gothic;
     background: url("/media/img2.jpg");
     background-size: cover;
@@ -408,4 +408,4 @@
   .btn1{
     width: 200px;
     height: 50px;
-  }
+  }*/
