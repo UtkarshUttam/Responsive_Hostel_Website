@@ -359,11 +359,15 @@
   .fa-google-plus {
     color: #dd4b39;
   }
-  /* {
+
+
+  /* From here Contact Us page content starts*/
+
+  /*{
     margin: 0;
     padding: 0;
-  }
-  */
+  }*/
+  
   .contact-bg{
     font-family: Alternate Gothic;
     background: url("/media/img2.jpg");
