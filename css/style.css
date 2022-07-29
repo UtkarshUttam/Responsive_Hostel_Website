@@ -363,12 +363,14 @@
     margin: 0;
     padding: 0;
   }
+  */
   .contact-bg{
     font-family: Alternate Gothic;
     background: url("/media/img2.jpg");
     background-size: cover;
   }
-  .container {
+  
+  .contact-container {
     height: 600px;
     width: 600px;
     background: whitesmoke;
@@ -377,14 +379,15 @@
     padding: 40px;
     
   }
-  .container p {
+  
+  .contact-container p {
     text-align: center;
     margin-bottom: 20px;
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  .input, .area{
+  .contact-input, .contact-area{
     width: 90%;
     padding: 15px;
     border: 1px solid #ECF0F1;
@@ -394,18 +397,22 @@
     font-size: 16px;
     transition: all 0.5s ease;
   }
-  .name .input
+  
+  .contact-name .input
   {
     width: 39.5%;
     float: left;
   }
-  .area{
+  
+  .contact-area{
     height: 200px;
   }
-  .btn{
+  
+  .contact-btn{
     text-align: center;
   }
-  .btn1{
+  
+  .contact-btn1{
     width: 200px;
     height: 50px;
-  }*/
+  }
