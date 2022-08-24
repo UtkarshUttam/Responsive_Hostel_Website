@@ -65,7 +65,7 @@
 }
 
 .background {
-    background: rgba(0, 0, 0, 0.7)url('../media/bg_img.jpg');
+    background: rgba(0, 0, 0, 0.4)url('../media/Drafts/ocean_stock_013_by_malleni_stock_d27cbq8.jpg');
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -419,4 +419,101 @@
   .contact-btn1{
     width: 200px;
     height: 50px;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+  
+  /* Services Page*/
+  .services-body-bg{
+    background-color: #EEEEEE;
+  }
+  aside {
+    font-size: 75px;
+    font-family:'Roboto Condensed', sans-serif;;
+    color: #393E46;
+    width: 250px;
+    /*padding-left: 50px;*/
+    text-align: center;
+    height: 100vh;
+    background-color: #00ADB5;    
+    /* background-image: linear-gradient(30deg , #0048bd, #44a7fd); */
+    /*border-top-right-radius: 80px;*/
+  }
+  
+  aside a {
+    font-size: 20px;
+    color: #393E46;
+    display: block;
+    padding: 12px;
+    text-align: left;
+    padding-left: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+  }
+  
+  aside a:hover {
+    color: whitesmoke;
+    background:#222831;
+    outline: none;
+    position: relative;
+    background-color:#222831;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  aside a i {
+    margin-right: 5px;
+  }
+  
+  aside a:hover::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    bottom: 100%;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-bottom-right-radius: 18px;
+    box-shadow: 0 20px 0 0 #222831;
+  }
+  
+  aside a:hover::before {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 38px;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -20px 0 0 #222831;
+  }
+  
+  aside p {
+    margin: 0;
+    padding: 40px 0;
+  }
+  
+  body {
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .social {
+    height: 0;  
+  }
+  
+  .social i:before {
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0077B5;
+    padding: 10px;
+    border-radius: 50%;
+    top:5px;
+    right:5px;
   }
