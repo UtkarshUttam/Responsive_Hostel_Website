@@ -3,8 +3,14 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
-
+/* a{
+  color: white;
+}
+a:hover{
+  color: black;
+} */
 .logo {
   width: 20%;
   display: flex;
@@ -25,7 +31,6 @@
   position: sticky;
   top: 0;
   cursor: pointer;
-
 }
 
 .nav-dark {
@@ -43,13 +48,14 @@
   padding: 25px 30px;
 }
 
+
 .nav-list li a {
-  text-decoration: none;
+ /* text-decoration: none;*/
   color: white;
 }
 
 .nav-list li a:hover {
-  text-decoration: none;
+ /* text-decoration: none;*/
   color: grey;
 }
 
@@ -121,15 +127,16 @@
 
 }
 
+
+
 .btn {
   padding: 18px 30px;
   margin: 7px 0;
   border: 2px solid white;
   border-radius: 8px;
   background: None;
-  color: white;
+  color: white; 
   cursor: pointer;
-
 }
 
 .btn-sm {
@@ -137,9 +144,12 @@
   vertical-align: middle;
 }
 
-.btn:hover {
-  background-color: white;
-  color: black;
+.btn a{
+  color: white;
+}
+
+.btn:hover {  
+  background-color: rgba(255, 255, 255, 0.3);  
 }
 
 .section {
@@ -470,7 +480,7 @@ aside a {
   padding: 12px;
   text-align: left;
   padding-left: 30px;
-  text-decoration: none;
+  /*text-decoration: none;*/
   -webkit-tap-highlight-color: transparent;
 }
 
