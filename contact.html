@@ -16,30 +16,55 @@
         <li><a href="services/services.html">Services</a></li>
         <li><a href="contact.html">Contact Us</a></li>
     </ul>
-    <div class="rightNav">
-        <input type="text" name="'Search" id="search" placeholder="Hola!">
+    <!-- <div class="rightNav">
+        <input type="text" name="search" id="search" placeholder="Hola!">
         <button class="btn btn-sm">Search</button>
-    </div>
+    </div> -->
 </nav>
 <section class="contact-bg"></section>
-<div class="contact-container">
-  <form>
-    <div>
-    <p>contact us</p>
-    <div class="contact-name">
-      <input type="text" class="contact-input" placeholder="Your First name">
-      <input type="text" class="contact-input" placeholder="Your Last name">
-    </div>
-    <div class="contact-mail">
-      <input id="mail" class="contact-input" placeholder="Your Email Adress">
-    </div>
-    <div class="contact-msg">
-      <textarea class="contact-area" placeholder="Your Message"></textarea>
-    </div>
-    <div class="contact-btn">
-      <button class="contact-btn1">Submit</button>
-    </div>
-  </form>
+  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='css/contact_us-style.css' type='text/css'>
+  <link rel="stylesheet" href="css/contact_us-style.css">
+  <div id="content">
+      <h1>Contact Us</h1>
+
+      <form action=" " method="post" autocomplete="on">
+          <p>
+              <label for="username" class="icon-user"> Name
+                  <span class="required">*</span>
+              </label>
+              <input type="text" name="username" id="username" required="required" placeholder="Your Name" /> 
+          </p>
+
+          <p>
+              <label for="usermail" class="icon-envelope"> E-mail address
+                  <span class="required">*</span>
+              </label>
+              <input type="email" name="usermail" id="usermail" placeholder="I promise I hate spam too!" required="required" />
+          </p>
+
+          <p>
+              <label for="usersite" class="icon-link"> Website</label>
+              <input type="url" name="usersite" id="usersite" placeholder="eg: http://www.example.com" />
+          </p>
+
+          <p>
+              <label for="subject" class="icon-bullhorn"> Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="What would you like to talk about?" />
+          </p>
+
+          <p>
+              <label for="message" class="icon-comment"> Message
+                  <span class="required">*</span>
+              </label>
+              <textarea placeholder="Your message here and I'll answer as soon as possible " required="required"></textarea>
+          </p>
+          <p class="indication">Fields with
+              <span class="required"> * </span>are required</p>
+
+          <input type="submit" value=" Send this mail ! " />
+
+      </form>
+  </div>  </form>
 </div>
 </body>
 </html>
