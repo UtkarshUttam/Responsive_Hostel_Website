@@ -49,7 +49,10 @@ h1 {
     z-index:100;
     padding:30px;
     /* border:1px solid #3700ff; */
-    background: #000000c9;
+    /* background: #000000c9; */
+    background-image: url('../media/004.jpg');
+    background-size: 400px 200px;
+    opacity: 0.75;
     /* background-image: url('../media/003.jpg') */
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
@@ -184,7 +187,7 @@ p {
     padding-right:10px;
 }
 .required {
-    color:#E5224C;
+    color:#ff0037;
 }
 /** Styling the send button **/
  input[type=submit] {
@@ -193,7 +196,7 @@ p {
     background:none;
     border:none;
     font-family:'Alice', serif;
-    color:#00153d;
+    color:#000000;
     font-size:18px;
     padding:10px 4px;
     border:0.5px solid #e0e0e0ce;
