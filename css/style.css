@@ -111,20 +111,29 @@ a:hover{
 }
 
 .secondHalf img {
-  width: 70%;
-  border: 4px SOLID white;
-  border-radius: 150px;
+  width: 150%;
+  border: 4px SOLID antiquewhite;
+  border-radius: 70px;
   display: block;
   margin: auto;
+  opacity: 0.70;
 }
-
+.text-head {
+  font-size: 80px;
+  margin-bottom: 50px;
+  color: aliceblue;
+  font-family: 'Merriweather', serif ;
+}
 .text-big {
-  font-size: 50px;
+  font-size: 80px;
+  margin-bottom: 50px;
+  color: #999;
 }
 
 .text-small {
-  font-size: 20px;
-
+  font-size: 30px;
+ color:#ffffff;
+ font-style: italic;
 }
 
 
@@ -152,16 +161,38 @@ a:hover{
   background-color: rgba(255, 255, 255, 0.3);  
 }
 
+.homebody {
+  background-color: #5C4D36;
+}
 .section {
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
   font-family: 'Merriweather', serif;
+  /* background-color: #00ADB5; */
 }
 
+.thumbnail {
+  margin-top: 3px;
+}
+.section1 {
+  background-color: #868068;
+}
+
+.section2 {
+  background-color: #683B0F;
+}
+
+.section3 {
+  background-color:#806144;
+}
+
+.section4 {
+  background-color: #5C4D36;
+}
 .sectionSubTag {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -318,7 +349,7 @@ a:hover{
 }
 
 .card button {
-  width: 120px;
+  width: 2000px;
   padding: 7px;
   margin: 10px 0;
   background-color: tomato;
