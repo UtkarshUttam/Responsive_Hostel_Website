@@ -1,10 +1,10 @@
-## Responsive_Hostel_Website
+# Responsive_Hostel_Website
 
 
-#Requirements:
+## Requirements:
 1.XAMPP
 
-#Running:
+## Running:
 To run, follow steps:
 1. Make sure the parent folder lies in C:\xampp\htdocs
 2. Open XAMPP Control Panel
@@ -14,6 +14,6 @@ To run, follow steps:
 6. type localhost[followed by the location of file under htdocs] Eg:http://localhost/Hostel/Responsive_Hostel_Website/home.html
 
 
-#Home_Page
+## Home_Page
 
 ![Homepage_screenshot](./media/Home_page_screenshot.png)
