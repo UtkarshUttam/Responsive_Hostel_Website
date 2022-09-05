@@ -17,3 +17,9 @@ To run, follow steps:
 ## Home_Page
 
 ![Homepage_screenshot](./media/Home_page_screenshot.png)
+
+
+## Contributers
+
+[Om Paithankar](https://github.com/am-i-op)
+[Abhishek M](https://github.com/EMPTY2126)
