@@ -21,5 +21,5 @@ To run, follow steps:
 
 ## Contributers
 
-[Om Paithankar](https://github.com/am-i-op)
-[Abhishek M](https://github.com/EMPTY2126)
+1.[Om Paithankar](https://github.com/am-i-op)
+2.[Abhishek M](https://github.com/EMPTY2126)
