@@ -14,6 +14,6 @@ To run, follow steps:
 6. type localhost[followed by the location of file under htdocs] Eg:http://localhost/Hostel/Responsive_Hostel_Website/home.html
 
 
-Home_Page
+#Home_Page
 
 ![Homepage_screenshot](./media/Home_page_screenshot.png)
