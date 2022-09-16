@@ -127,7 +127,7 @@ a:hover{
 .text-big {
   font-size: 80px;
   margin-bottom: 50px;
-  color: #999;
+  color: #12262F;
 }
 
 .text-small {
@@ -162,7 +162,7 @@ a:hover{
 }
 
 .homebody {
-  background-color: #5C4D36;
+  background-color: #263444;
 }
 .section {
   height: 500px;
@@ -179,19 +179,19 @@ a:hover{
   margin-top: 3px;
 }
 .section1 {
-  background-color: #868068;
+  background-color: #556A7D;
 }
 
 .section2 {
-  background-color: #683B0F;
+  background-color: #5F738C;
 }
 
 .section3 {
-  background-color:#806144;
+  background-color:#94A4B4;
 }
 
 .section4 {
-  background-color: #5C4D36;
+  background-color: #a1b6cb;
 }
 .sectionSubTag {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
