@@ -1,195 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Complain</title>
-    </head>
-    
-    <body class="homebody">
-        <nav class="navbar nav-dark">
-            <ul class="nav-list">
-                <div class="logo"><img src="../media/logo.png" alt="logo" style="border:3px solid white; border-radius:50px">
-                </div>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../services/services.html">Services</a></li>
-                <li><a href="../contact.html">Contact Us</a></li>
-            </ul>
-            <div class="rightNav">
-                <input type="text" name="search" id="search" placeholder="Hola!">
-                <button class="btn btn-sm">Search</button>
-            </div>
-        </nav>
-    
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Complain</title>
+</head>
+
+<body class="homebody">
+  <nav class="navbar nav-dark">
+    <ul class="nav-list">
+      <div class="logo"><img src="../media/logo.png" alt="logo" style="border:3px solid white; border-radius:50px">
+      </div>
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../services/services.html">Services</a></li>
+      <li><a href="../contact.html">Contact Us</a></li>
+    </ul>
+    <div class="rightNav">
+      <input type="text" name="search" id="search" placeholder="Hola!">
+      <button class="btn btn-sm">Search</button>
+    </div>
+  </nav>
 
   <link rel="stylesheet" href="complain.css">
-<div class="container1">
-  <header class="header">
-    <h1 id="title" class="text-center">                          </h1>
-	
-    <p id="description" class="description text-center">
-           
-    </p>
-  </header>
-  
-  <form id="survey-form">
-  
-    <div class="form-group">
-      <label id="name-label" for="name">Name</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        class="form-control"
-        placeholder="Enter your full name"
-        required
-      />
-    </div>
-	
-    <div class="form-group">
-      <label id="email-label" for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        class="form-control"
-        placeholder="Enter your Email"
-        required
-      />
-    </div>
-	
-    <div class="form-group">
-      <label id="number-label" for="number"
-        >Age<span class="clue">(optional)</span></label
-      >
-      <input
-        type="number"
-        name="age"
-        id="number"
-        min="10"
-        max="99"
-        class="form-control"
-        placeholder="Age"
-      />
-    </div>
-	
-    <div class="form-group">
-      <p>Which of the following is your schooling? </p>
-      <select id="dropdown" name="schooling" class="form-control" required>
-        <option disabled selected value>Select following Schools</option>
-        <option value="Engineering">Engineering</option>
-        <option value="Architecture">Architecture</option>
-		<option value="Medical">Medical</option>
-        <option value="Law">Law</option>
-        <option value="Commerce">Commerce</option>
-        <option value="preferNo">Prefer not to say</option>
-      </select>
-    </div>
+  <div class="container1">
+    <header class="header">
+      <h1 id="title" class="text-center"> </h1>
 
-    <div class="form-group">
-      <p>Would you like your identity to be revealed?</p>
-      <label>
-        <input
-          name="user-recommend"
-          value="Yes"
-          type="radio"
-          class="input-radio"
-          checked
-        />Yes</label
-      >
-      <label>
-        <input
-          name="user-recommend"
-          value="maybe"
-          type="radio"
-          class="input-radio"
-        />Maybe</label
-      >
+      <p id="description" class="description text-center">
 
-      <label
-        ><input
-          name="user-recommend"
-          value="no"
-          type="radio"
-          class="input-radio"
-        />No</label
-      >
-    </div>
-
-    <div class="form-group">
-      <p>
-        Which of the following criteria are the reason for your discomfort?
-        <span class="clue">(Check all that apply)</span>
       </p>
+    </header>
 
-      <label
-        ><input
-          name="reason"
-          value="Bullyingy"
-          type="checkbox"
-          class="input-checkbox"
-        />Bullying</label
-      >
-      <label>
-        <input
-          name="reason"
-          value="Staff"
-          type="checkbox"
-          class="input-checkbox"
-        />Staff</label
-      >
-      <label
-        ><input
-          name="reason"
-          value="Management"
-          type="checkbox"
-          class="input-checkbox"
-        />Management</label
-      >
-      <label
-        ><input
-          name="reason"
-          value="Food"
-          type="checkbox"
-          class="input-checkbox"
-        />Food</label
-      >
-      <label
-        ><input
-          name="reason"
-          value="Room-services"
-          type="checkbox"
-          class="input-checkbox"
-        />Room services</label
-      >
-      <label
-        ><input
-          name="reason"
-          value="Other"
-          type="checkbox"
-          class="input-checkbox"
-        />Other</label
-      >
-      <br>
+    <form id="survey-form">
 
-    <div class="form-group">
-      <p>Elaborate.....</p>
-      <textarea
-        id="comments"
-        class="input-textarea"
-        name="comment"
-        placeholder="Enter your complain here..."
-        required
-      ></textarea>
-    </div>
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name" required />
+      </div>
 
-    <div class="form-group">
-      <button type="submit" id="submit" class="submit-button">
-        Submit
-      </button>
-    </div>
-  </form>
-</div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+      </div>
+
+      <div class="form-group">
+        <p>Which of the following is your schooling? </p>
+        <select id="dropdown" name="schooling" class="form-control" required>
+          <option disabled selected value>Select following Schools</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Architecture">Architecture</option>
+          <option value="Medical">Medical</option>
+          <option value="Law">Law</option>
+          <option value="Commerce">Commerce</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you like your identity to be revealed?</p>
+        <label>
+          <input name="user-recommend" value="Yes" type="radio" class="input-radio" checked />Yes</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="no" type="radio" class="input-radio" />No</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Which of the following criteria are the reason for your discomfort?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="reason" value="Bullyingy" type="checkbox" class="input-checkbox" />Bullying</label>
+        <label>
+          <input name="reason" value="Staff" type="checkbox" class="input-checkbox" />Staff</label>
+        <label><input name="reason" value="Management" type="checkbox" class="input-checkbox" />Management</label>
+        <label><input name="reason" value="Food" type="checkbox" class="input-checkbox" />Food</label>
+        <label><input name="reason" value="Room-services" type="checkbox" class="input-checkbox" />Room services</label>
+        <label><input name="reason" value="Other" type="checkbox" class="input-checkbox" />Other</label>
+        <br>
+
+        <div class="form-group">
+          <p>Elaborate.....</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your complain here..."
+            required></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+    </form>
+  </div>
+</body>
+
 </html>
