@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gym Form</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="./gym.css">
+</head>
+
+<body>
+    <nav class="navbar nav-dark">
+        <ul class="nav-list">
+            <div class="logo"><img src="../../media/logo.png" alt="logo"
+                    style="border:3px solid white; border-radius:50px">
+            </div>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../services/services.html">Services</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Hola!">
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+    <form id="survey-form">
+        <div class="taringa">
+            <label for="Gymname" id="Gymname-label">Name: </label>
+            <input type="text" id="Gymname" placeholder="Name" required><br><br>
+            <label for="Gymnumber" id="Gymnumber-label">Registration Number: </label>
+            <input type="text" id="Gymnumber" placeholder="Registration Number" required>
+            <br><br>
+            <label for="age" id="number-label">Age: </label><input type="number" id="Gymage" placeholder="Age" min="18"
+                max="99" required><br><br>
+        </div>
+        <div>
+            <label for="current-activity">How active are you?</label>
+            <select id="dropdown" name="current-activity">
+                <option>Notactive</option>
+                <option>A little active</option>
+                <option>Normal</option>
+                <option>Very active</option>
+                <option>Super active</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="experience">How much experience do you have excercising?</label><br>
+            <input type="radio" id="none" name="experience" value="none">
+            <label for="none">None experience</label><br>
+            <input type="radio" id="some" name="experience" value="some">
+            <label for="some">Some experience</label><br>
+            <input type="radio" id="lots" name="experience" value="lots">
+            <label for="lots">A lot of experience</label><br>
+        </div>
+        <br>
+        <div>
+            <label>Wich muscle(s) do you want to work out?</label><br>
+            <input type="checkbox" id="chest" name="muscle" value="chest">
+            <label for="chest">Chest</label><br>
+            <input type="checkbox" id="back" name="muscle" value="back">
+            <label for="back">Back</label><br>
+            <input type="checkbox" id="arms" name="muscle" value="arms">
+            <label for="arms">Arms</label><br>
+            <input type="checkbox" id="abs" name="muscle" value="abs">
+            <label for="abs">Abs</label><br>
+            <input type="checkbox" id="legs" name="muscle" value="legs">
+            <label for="legs">Legs</label><br>
+        </div>
+        <br>
+        <div>
+            <textarea class="Comments" placeholder="Additional comments"></textarea>
+        </div>
+        <div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
