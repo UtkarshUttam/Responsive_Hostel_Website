@@ -4,7 +4,7 @@ body {
     font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
     font-size:16px;
     /* background:#ffffff; */
-    background-image: url('../media/003.jpg');
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.7)), url('../media/003.jpg');
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
