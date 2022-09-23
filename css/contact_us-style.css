@@ -1,9 +1,7 @@
-/* generic */
 body {
     color: #ffffff;
     font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
     font-size:16px;
-    /* background:#ffffff; */
     background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.7)), url('../media/003.jpg');
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -18,7 +16,6 @@ h1 {
     position:relative;
     color:#ffffff;
 }
-/** have a nice ampersand **/
  h1:after {
     font-size:25px;
     color:#003d50;
@@ -29,7 +26,6 @@ h1 {
     font-family:'Alice', Verdana, serif;
     text-shadow: 0px 1px 0px #fff;
 }
-/** create the gradient bottom **/
  h1:before {
     position:absolute;
     bottom:15px;
@@ -40,7 +36,6 @@ h1 {
     width:100%;
 
 }
-/* Here comes to good stuff : content styling */
  #content {
     position:relative;
     margin:50px auto;
@@ -48,21 +43,15 @@ h1 {
     min-height:200px;
     z-index:100;
     padding:30px;
-    /* border:1px solid #3700ff; */
     background: #000000c9;
-    /* background-image: url('../media/003.jpg') */
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
     border-radius:8px;
-    /*box-shadow*/
     -webkit-box-shadow:0px 1px 6px #3F3F3F;
     -moz-box-shadow:0px 1px 6px #3F3F3F;
     box-shadow:0px 1px 6px #3F3F3F;
 }
-/** my "fake" background that will hover the stripes **/
  #content:after {
-    /* background:#00000000; */
-    /* background-image: url('../media/003.jpg'); */
     margin:10px;
     position: absolute;
     content :" ";
@@ -71,22 +60,16 @@ h1 {
     right: 0;
     top: 0;
     z-index: -1;
-    /* border:1px #E5E5E5 solid; */
-    /*border-radius*/
     -webkit-border-radius:8px;
     -moz-border-radius:8px;
     border-radius:8px;
 }
-/*** form styling **/
-
-/** we remove the red glow around required fields since we are already using the red star */
  input:required, textarea:required {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
     -o-box-shadow:none;
     box-shadow:none;
 }
-/** inputs and textarea**/
  input:not([type="submit"]), textarea {
     outline:none;
     display:block;
@@ -96,11 +79,9 @@ h1 {
     color:#3F3F3F;
     font-family:'Droid Sans', Tahoma, Arial, Verdana sans-serif;
     font-size:14px;
-    /*border-radius*/
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
     border-radius:2px;
-    /*transition*/
     -webkit-transition:background 0.2s linear, box-shadow 0.6s linear;
     -moz-transition:background 0.2s linear, box-shadow 0.6s linear;
     -o-transition:background 0.2s linear, box-shadow 0.6s linear;
@@ -109,7 +90,6 @@ h1 {
 input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):focus, textarea:focus {
     background:#f7f7f7;
     border:dashed 1px #969696;
-    /*box-shadow*/
     -webkit-box-shadow:2px 2px 7px #E8E8E8 inset;
     -moz-box-shadow:2px 2px 7px #E8E8E8 inset;
     box-shadow:2px 2px 7px #E8E8E8 inset;
@@ -117,7 +97,6 @@ input:not([type="submit"]):active, textarea:active, input:not([type="submit"]):f
 input:not([type="submit"]) {
     height: 20px;
 }
-/* placeholder */
  ::-webkit-input-placeholder {
     color:#BABABA;
     font-style:italic;
@@ -130,9 +109,6 @@ textarea {
     min-height:150px;
     resize:vertical
 }
-/** labels**/
-
-/** adding our icon font !! */
  .iconic:before {
     font-size:25px;
     font-family:'Alice', Verdana, serif;
@@ -186,7 +162,6 @@ p {
 .required {
     color:#E5224C;
 }
-/** Styling the send button **/
  input[type=submit] {
     margin-left:235px;
     cursor:pointer;
@@ -199,15 +174,12 @@ p {
     border:0.5px solid #e0e0e0ce;
     text-shadow: 0px 1px 1px #E8E8E8;
     background: rgba(255, 255, 255, 0.808);
-    /*border-radius*/
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;
-    /*box-shadow*/
     -webkit-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
     -moz-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
     box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #EAEAEA;
-    /*transition*/
     -webkit-transition:all 0.2s linear;
     -moz-transition:all 0.2s linear;
     -o-transition:all 0.2s linear;
@@ -218,7 +190,6 @@ input[type=submit]:hover {
     border-color: #CECECE;
     background: rgb(244, 244, 244);
   background: linear-gradient(top, rgba(244, 244, 244, 1) 0%, rgba(242, 242, 242, 1) 100%);
-    /*box-shadow*/
     -webkit-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
     -moz-box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
     box-shadow:0px 1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
@@ -228,7 +199,6 @@ input[type=submit]:active, input[type=submit]:focus {
     top:1px;
     color:#515151;
     background: rgb(234, 234, 234);
-    /*box-shadow*/
     -webkit-box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
     -moz-box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
     box-shadow:0px -1px 1px #FFF inset, 0 0 0px 5px #E0E0E0;
