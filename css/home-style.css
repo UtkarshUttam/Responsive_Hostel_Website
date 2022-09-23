@@ -214,7 +214,7 @@ body {
 }
 
 .container {
-    height: 125rem;
+    height: 0rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
@@ -273,10 +273,21 @@ body {
 
 }
 
+.card1 {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 3.75rem;
+    border-bottom: 5px solid #aaa;
+
+}
+
 .cardp1 {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
-    font-size: 2.25rem;
+    font-size: x-large;
     padding: 3rem;
     font-style: italic;
     flex-direction: column;
@@ -290,7 +301,7 @@ body {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     padding: 3rem;
-    font-size: 2.25rem;
+    font-size: x-large;
     font-style: italic;
     flex-direction: column-reverse;
     font-family:'Alice';
@@ -307,7 +318,7 @@ body {
     flex-direction: column-reverse;
     object-fit: cover;
     margin-bottom: 1rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     border-radius: 61% 39% 60% 40% / 27% 65% 35% 73%;
     animation: change ease-in-out 5s infinite;
 }
