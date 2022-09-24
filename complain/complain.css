@@ -36,7 +36,6 @@ body::before {
       rgba(0, 0, 0, 0.5)
     ),
     url(../media/R.jpg);
-    filter: blur(2.5px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,7 +80,7 @@ button {
 .container1 {
   width: 100%;
   margin: 3.125rem auto 0 auto;
-  background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.9)), url(../media/635b6e3b30bfeae7b713cb8162aa2c9a.jpg);
+  background-image: linear-gradient(rgb(0,0,0,0.2), rgb(0,0,0,0.4)), url(../media/CCBG.png);
 }
 
 @media (min-width: 576px) {
