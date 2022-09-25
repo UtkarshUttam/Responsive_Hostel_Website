@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap'); */
 
 * {
   margin: 0;
@@ -25,14 +25,16 @@ a:hover{
 }
 
 .navbar {
+  font-family: Merriweather;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   position: sticky;
   top: 0;
   cursor: pointer;
-}
 
+}
 .nav-dark {
   background: rgba(0, 0, 0, 0.9);
 }

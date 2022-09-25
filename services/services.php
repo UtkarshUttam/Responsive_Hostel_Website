@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: ../user/login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: login.php");
+  }
+  ?>
 <!DOCTYPE html>
 
 <html>
@@ -26,6 +39,7 @@
             <div class="dropdown">
                 <button class="btn dropbtn"><img src="../media/user.png" alt="profile-icon" width="30" height="30"></button>
                 <div class="dropdown-content">
+                    <a href="../user/profile.php">Profile Page</a>
                     <a href="#">Sign Out</a>
         
                 </div>

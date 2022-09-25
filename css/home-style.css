@@ -1,12 +1,11 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Dosis");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+/* @charset "UTF-8"; */
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap'); */
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* nav bar */
 .logo {
@@ -23,20 +22,23 @@
 }
 
 .navbar {
+    font-family: Merriweather;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 0;
     cursor: pointer;
-}
+  
+  }
 
 .nav-dark {
     background: rgba(0, 0, 0, 0.9);
 }
 
 .nav-list {
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
 }
@@ -59,7 +61,7 @@
 }
 
 .rightNav {
-    width: 30%;
+    width: 50%;
     text-align: right;
     padding: 0 23px;
 }
@@ -98,6 +100,8 @@
 
 /* intro part */
 body {
+    margin: 0rem;
+    padding: 0rem;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -202,16 +206,17 @@ header {
 /* content */
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-* {
+/* * {
     margin: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
+    margin: 0rem;
     width: 100%;
     display: flex;
     justify-content: center;
-}
+} */
 
 .container {
     height: 0rem;
