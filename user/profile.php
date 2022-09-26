@@ -11,8 +11,33 @@
   	header("location: login.php");
   }
   ?>
+  <?php 
+  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
+  $Mobile= "SELECT Mobile_No FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
+  $result = mysqli_query($db, $Mobile);
+  $row['mobile'] = mysqli_fetch_assoc($result);
+  ?>
+  <?php 
+  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
+  $EMAIL= "SELECT email_ID FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
+  $result = mysqli_query($db, $EMAIL);
+  $row['email'] = mysqli_fetch_assoc($result);
+  ?>
+    <?php 
+  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
+  $regno= "SELECT Registration_No FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
+  $result = mysqli_query($db, $regno);
+  $row['regno'] = mysqli_fetch_assoc($result);
+  ?>
+      <?php 
+  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
+  $room= "SELECT room FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
+  $result = mysqli_query($db, $room);
+  $row['room'] = mysqli_fetch_assoc($result);
+  ?>
 <!DOCTYPE html>
 <html>
+
 
 <head>
   <link rel="stylesheet" type="text/CSS" href="../css/profile.css" />
@@ -34,31 +59,26 @@
             <button class="btn btn-sm">Search</button>
         </div>
     </nav>
-  <div class="portfoliocard">
-    <div class="coverphoto"></div>
-    <div class="profile_picture"></div>
-    <div class="left_col">
-      <div class="followers">
-        <div class="follow_count">*******</div>
-        Degree
+    <body>
+  <div class="wrapper">
+    <div class="userBox">
+      <div class="header">
+        <p><?php echo implode($row['regno']) ?></p>
       </div>
-      <div class="following">
-        <div class="follow_count">*******</div>
-        Course
+      <span class="userPic"></span>
+      <div class="middle">
+        <div class="middleText"><br><br><br><br>
+        <p><?php echo $_SESSION['username'] ?></p>
+        <p><?php echo implode($row['mobile']) ?></p>
+        <p><?php echo implode($row['email']) ?></p>
+        </div>
       </div>
-    </div>
-    <div class="right_col">
-    <?php  isset($_SESSION['username'])  ?>
-      <h2 class="name"><?php echo $_SESSION['username']; unset($_SESSION['success']); ?></h2>
-      <h3 class="location">Name of the Student</h3>
-      <ul class="contact_information">
-        <li class="work">*age*</li>
-        <li class="website">*Roomno*</li>
-        <li class="mail"></li>
-        <li class="phone">1-(732)-757-2923</li>
-        <li class="resume"><a href="#" class="nostyle">download resume</a></li>
-      </ul>
+      <div class="footer">
+        <ul><br><br><br>
+          <li><span><?php echo implode($row['room']) ?></span>Room No</li>
+          <!-- <li><span>1.2m</span>Followers</li>
+          <li><span>62</span>Following</li> -->
+        </ul>
+      </div>
     </div>
   </div>
-</body>
-</html>
