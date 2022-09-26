@@ -6,6 +6,7 @@ $username = "";
 $email    = "";
 $reg_no = "";
 $mobile_no = "";
+$room_no = "";
 $errors = array(); 
 
 // connect to the database
@@ -14,6 +15,7 @@ $db = mysqli_connect('localhost', 'root', '', 'hostel_data');
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
   // receive all input values from the form
+  $room_no = mysqli_real_escape_string($db, $_POST['room_no']);
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $reg_no = mysqli_real_escape_string($db, $_POST['reg_no']);
@@ -28,6 +30,7 @@ if (isset($_POST['reg_user'])) {
   if (empty($reg_no)) { array_push($errors, "Registration number is required"); }
   if (empty($mobile_no)) { array_push($errors, "Mobile number is required"); }
   if (empty($password_1)) { array_push($errors, "Password is required"); }
+  if (empty($room_no)) { array_push($errors, "Alloted is required");}
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
   }
@@ -52,12 +55,12 @@ if (isset($_POST['reg_user'])) {
   if (count($errors) == 0) {
   	$password = md5($password_1);//encrypt the password before saving in the database
 
-  	$query = "INSERT INTO userinfo (Registration_No, Mobile_No, email_ID, username, password) 
-  			  VALUES( '$reg_no', '$mobile_no', '$email', '$username', '$password')";
+  	$query = "INSERT INTO userinfo (Registration_No, Mobile_No, email_ID, username, password, Room) 
+  			  VALUES( '$reg_no', '$mobile_no', '$email', '$username', '$password', '$room_no')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
-  	header('location: index.php');
+  	header('location: profile.php');
   }
 }
 
@@ -80,7 +83,7 @@ if (isset($_POST['login_user'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['username'] = $username;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: index.php');
+  	  header('location: profile.php');
   	}else {
   		array_push($errors, "Wrong username/password combination");
   	}
