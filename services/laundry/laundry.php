@@ -67,13 +67,12 @@
             <header>Register for Laundry </header>
             <form method="post">
                 <fieldset>
-                    <br />
-                    <p><?php echo implode($row['room']) ?></p>
-                    <!-- <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required> -->
+                    <br />                    
+                    <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php echo $room_no; ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Cloth-num" id="Clothe-num" placeholder="Number of clothes" required value="<?php echo $clothes_no; ?>">
+                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php echo $clothes_no; ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Instructions" id="Instructions" placeholder="Instructions if any." value="<?php echo $instruct; ?>">
+                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value="<?php echo $instruct; ?>">
                     <br /><br /><br>
                     <label for="submit"></label>
                     <input type="submit" name="laundry_submit" id="submit" value="REGISTER">
