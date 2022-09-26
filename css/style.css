@@ -312,7 +312,7 @@ a:hover{
 .image-top {
   width: 101%;
   height: 220px;
-  object-fit: cover;
+  object-fit:fill;
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
 
