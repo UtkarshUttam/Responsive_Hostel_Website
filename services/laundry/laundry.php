@@ -11,30 +11,10 @@
   	header("location: ../user/login.php");
   }
   ?>
-  <?php 
-  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
-  $Mobile= "SELECT Mobile_No FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
-  $result = mysqli_query($db, $Mobile);
-  $row['mobile'] = mysqli_fetch_assoc($result);
-  ?>
-  <?php 
-  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
-  $EMAIL= "SELECT email_ID FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
-  $result = mysqli_query($db, $EMAIL);
-  $row['email'] = mysqli_fetch_assoc($result);
-  ?>
-    <?php 
-  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
-  $regno= "SELECT Registration_No FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
-  $result = mysqli_query($db, $regno);
-  $row['regno'] = mysqli_fetch_assoc($result);
-  ?>
-      <?php 
-  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
-  $room= "SELECT room FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
-  $result = mysqli_query($db, $room);
-  $row['room'] = mysqli_fetch_assoc($result);
-  ?>
+  <?php
+  	$query = "INSERT INTO laundry_table (Room, Clothes_no, Instruction) 
+      VALUES( '$room_no', '$clothes_no', '$instruct')";
+mysqli_query($db, $query);?>
 <!DOCTYPE html>
 <html>
 
@@ -68,11 +48,11 @@
             <form method="post">
                 <fieldset>
                     <br />                    
-                    <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php echo $room_no; ?>">
+                    <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php echo $room_no ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php echo $clothes_no; ?>">
+                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php echo $clothes_no ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value="<?php echo $instruct; ?>">
+                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value="<?php echo $instruct ?>">
                     <br /><br /><br>
                     <label for="submit"></label>
                     <input type="submit" name="laundry_submit" id="submit" value="REGISTER">

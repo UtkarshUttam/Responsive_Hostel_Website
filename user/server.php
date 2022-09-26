@@ -86,8 +86,8 @@ if (isset($_POST['laundry_submit'])){
   	mysqli_query($db, $query);
     }
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
-  	header('location: ../../user/profile.php');
+  	$_SESSION['success'] = "Your request has been sent!";
+  	header('location: ../../user/index.php');
   }
 }
 

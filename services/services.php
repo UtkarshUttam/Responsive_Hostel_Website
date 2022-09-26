@@ -40,7 +40,7 @@
                 <button class="btn dropbtn"><img src="../media/user.png" alt="profile-icon" width="30" height="30"></button>
                 <div class="dropdown-content">
                     <a href="../user/profile.php">Profile Page</a>
-                    <a href="#">Sign Out</a>
+                    <a href="../user/index.php?logout='1'">Sign Out</a>
         
                 </div>
             </div>
