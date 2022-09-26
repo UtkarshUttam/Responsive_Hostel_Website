@@ -7,6 +7,10 @@ $email    = "";
 $reg_no = "";
 $mobile_no = "";
 $room_no = "";
+//variables for laundry page starts
+$clothes_no = "";
+$instruct = "";
+//variables for laundry page ends
 $errors = array(); 
 
 // connect to the database
@@ -61,6 +65,14 @@ if (isset($_POST['reg_user'])) {
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "You are now logged in";
   	header('location: profile.php');
+  }
+}
+// LAUNDRY DATA 
+if (isset($_POST['laundry_submit'])){
+  $clothes_no = mysqli_real_escape_string($db, $_POST['clothes_no']);
+  $instruct = mysqli_real_escape_string($db, $_POST['Instruction']);
+  if (empty($clothes_no)) {
+  	array_push($errors, "No. of Clothes is required");
   }
 }
 
