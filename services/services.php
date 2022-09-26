@@ -69,7 +69,7 @@
                 </div>
                 <div class="column">
                     <div class="card">
-                        <a href="./laundry/laundry.html">
+                        <a href="./laundry/laundry.php">
                         <div class="icon-wrapper">
                             <i class="fa-solid fa-shirt"></i>
                         </div>
