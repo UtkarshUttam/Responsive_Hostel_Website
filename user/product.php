@@ -11,7 +11,7 @@ $email    = "";
 $errors = array(); 
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'project');
+$db = mysqli_connect('localhost', 'root', '', 'hostel_data');
 
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
@@ -19,7 +19,7 @@ if ($db->connect_error) {
 
 
 
-$sql = "SELECT id, username, email, img FROM users";
+$sql = "SELECT Registration_No, Mobile_No, Email_ID, Username, Password FROM userinfo";
 $result = $db->query($sql);
 
 
