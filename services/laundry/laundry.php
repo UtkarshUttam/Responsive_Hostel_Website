@@ -1,5 +1,5 @@
-<?php 
-  session_start(); 
+<?php include('../../user/server.php');
+
 
   if (!isset($_SESSION['username'])) {
   	$_SESSION['msg'] = "You must log in first";
@@ -71,12 +71,12 @@
                     <p><?php echo implode($row['room']) ?></p>
                     <!-- <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required> -->
                     <br /><br /><br><br>
-                    <input type="text" name="Cloth-num" id="Clothe-num" placeholder="Number of clothes" required>
+                    <input type="text" name="Cloth-num" id="Clothe-num" placeholder="Number of clothes" required value="<?php echo $clothes_no; ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Instructions" id="Instructions" placeholder="Instructions if any.">
+                    <input type="text" name="Instructions" id="Instructions" placeholder="Instructions if any." value="<?php echo $instruct; ?>">
                     <br /><br /><br>
                     <label for="submit"></label>
-                    <input type="submit" name="submit" id="submit" value="REGISTER">
+                    <input type="submit" name="laundry_submit" id="submit" value="REGISTER">
                 </fieldset>
             </form>
         </div>
