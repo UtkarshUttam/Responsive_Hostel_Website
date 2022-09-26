@@ -26,6 +26,10 @@
 		<form method="post" action="register.php">
 			<?php include('errors.php'); ?>
 			<div class="user-box">
+				<input type="text" name="room_no" value="<?php echo $room_no; ?>">
+				<label>Alloted Room Number</label>
+			</div>
+			<div class="user-box">
 				<input type="text" name="reg_no" value="<?php echo $reg_no; ?>">
 				<label>Registration Number</label>
 			</div>
