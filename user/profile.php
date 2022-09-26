@@ -8,7 +8,7 @@
   if (isset($_GET['logout'])) {
   	session_destroy();
   	unset($_SESSION['username']);
-  	header("location: login.php");
+  	header("location: ../user/login.php");
   }
   ?>
   <?php 
@@ -68,7 +68,7 @@
       <span class="userPic"></span>
       <div class="middle">
         <div class="middleText"><br><br><br><br>
-        <p><?php echo $_SESSION['username'] ?></p>
+        <p> <?php echo $_SESSION['username'] ?></p>
         <p><?php echo implode($row['mobile']) ?></p>
         <p><?php echo implode($row['email']) ?></p>
         </div>
