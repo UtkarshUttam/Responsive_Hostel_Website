@@ -99,6 +99,10 @@ body {
     margin: 0px;
   
   }
+
+  .wrapper{
+    position:sticky;
+  }
   
   .userBox {
     width:500px;
@@ -127,8 +131,7 @@ body {
     background-size:cover;
   }
   .header {
-    background: blue;
-    background:url('../media/logo.png');
+    background: rgba(0, 0, 0, 0.9) url('../media/003.jpg');
     background-position: 0 60%;
     opacity: 0.75;
     background-size:cover;
@@ -137,7 +140,7 @@ body {
     text-align:right;
     line-height:23em;
     
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     
   }
   .header p {
@@ -162,7 +165,7 @@ body {
   .middle p { 
     padding-top: 1rem;
     margin-top: 5px;
-      /* margin-left:199px; */
+    /* margin-left:199px; */
     font-size: 22px;
    
   
