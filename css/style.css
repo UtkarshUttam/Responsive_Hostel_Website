@@ -256,11 +256,12 @@ a:hover{
 }
 
 .cards-wrapper {
+  height: 550px;
   width: 80%;
   display: flex;
   justify-content: space-evenly;
   position: relative;
-  top: 35%;
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -311,7 +312,8 @@ a:hover{
 
 .image-top {
   width: 101%;
-  height: 220px;
+  height: 275px;
+  padding-bottom: 80px;
   object-fit:fill;
   clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
 }
