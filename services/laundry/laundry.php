@@ -60,7 +60,7 @@
             <?php include('../../user/errors.php'); ?>
                 <fieldset>
                     <br />                    
-                    <!-- <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php $room_no ?>"> -->
+                    <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php $room_no ?>">
                     <br /><br /><br><br>
                     <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php  echo $Clothes_no; ?>">
                     <br /><br /><br><br>
@@ -75,7 +75,24 @@
 </body>
 
 </html>
+
 <?php
-$query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
-  			  VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
-  	mysqli_query($db, $query);?>
+// $query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
+//   			  VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
+//   	mysqli_query($db, $query);
+
+
+if (isset($_POST['laundry_submit'])){
+  $Clothes_no = mysqli_real_escape_string($db, $_POST['Clothes_no']);
+  $Instruction = mysqli_real_escape_string($db, $_POST['Instruction']);
+  
+  if (empty($Clothes_no)) {
+  	array_push($errors, "No. of Clothes is required");
+  }
+  if ($room_no = $room_no1 ) {
+    $query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
+              VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
+        mysqli_query($db, $query);
+  	header('location: ../../user/index.php');
+  }
+}
