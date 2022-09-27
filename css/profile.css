@@ -105,8 +105,8 @@ body {
   }
   
   .userBox {
-    width:500px;
-    height: 600px;
+    width: 550px;
+    height: 671px;
     box-shadow: 0 1px 1px rgba(50,50,50,.40);
     /* background: #fff; */
     border-radius:8px;
@@ -189,28 +189,36 @@ body {
   }
 .footer {
     margin-top: -50px;
-    height: 231px;
+    height: 250px;
+    width: 100%;
     border-radius: 0 0 8px 8px;
     background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.2), rgba(0, 0, 0, 0.9) );
     justify-content: center;
     /* background-color: rgba(0, 0, 0, 0.6); */
 }
 footer ul {
+  padding-left: 50px  ;
     list-style:none;
     font-size:25px;
     margin:14px auto;
     margin-left:-10px;
   }
   li span {
+    width: 115px;
     border: 0.5rem;
     font-size:40px;
+    text-align: center;
     display:block;
     /* background-color: rgba(0, 0, 0, 0.503); */
   }
 .footer li {
     margin:0 30px;
+    width: 115px;
     color:#ffffff;
+    text-align: center;
     text-align:center;
+    padding-left: 1.75rem;
+    margin-bottom: 1rem;
     display:inline-block;
   }
   

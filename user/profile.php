@@ -41,8 +41,8 @@
       <?php 
 
   $db1 = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
-  $Clothes= "SELECT Clothes_no FROM laundry_table WHERE Registration_No= '$regno1' LIMIT 1";
-  $result = mysqli_query($db, $Clothes);
+  $Cnf_id= "SELECT Cnf_id FROM laundry_table WHERE Registration_No= '$regno1' LIMIT 1";
+  $result = mysqli_query($db, $Cnf_id);
   // $row['laundry'] = mysqli_fetch_assoc($result)
   // if(mysqli_num_rows($result) == 0){
     $row['laundry'] = mysqli_num_rows($result) > 0 ? implode(mysqli_fetch_assoc($result)) : 'None'; 
@@ -89,9 +89,9 @@
         </div>
       </div>
       <div class="footer">
-        <ul><br><br><br>
+        <ul class="uli"><br><br><br>
           <li><span><?php echo implode($row['room']) ?></span>Room No</li>
-          <li><span><?php echo $row['laundry'] ?></span>most recent clothes sent to laundry</li>
+          <li><span><?php echo $row['laundry'] ?></span>most recent Confirmation id</li>
 
           <!-- <li><span>1.2m</span>Followers</li>
           <li><span>62</span>Following</li> -->
