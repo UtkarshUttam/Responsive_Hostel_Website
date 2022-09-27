@@ -8,8 +8,8 @@ $reg_no = "";
 $mobile_no = "";
 $room_no = "";
 //variables for laundry page starts
-$clothes_no = "";
-$instruct = "";
+$Clothes_no = "";
+$Instruction = "";
 //variables for laundry page ends
 $errors = array(); 
 
@@ -69,21 +69,21 @@ if (isset($_POST['reg_user'])) {
 }
 // LAUNDRY DATA 
 if (isset($_POST['laundry_submit'])){
-  $clothes_no = mysqli_real_escape_string($db, $_POST['Clothes_no']);
-  $instruct = mysqli_real_escape_string($db, $_POST['Instruction']);
-  $room_no1 = mysqli_real_escape_string($db, $POST['Room-Num']);
-  if (empty($clothes_no)) {
+  $Clothes_no = mysqli_real_escape_string($db, $_POST['Clothes_no']);
+  $Instruction = mysqli_real_escape_string($db, $_POST['Instruction']);
+  
+  if (empty($Clothes_no)) {
   	array_push($errors, "No. of Clothes is required");
   }
   if (count($errors) == 0) {
   	// $password = md5($password_1);//encrypt the password before saving in the database
     $query = "SELECT Room FROM userinfo WHERE Registration_No='$reg_no' ";
   	$results = mysqli_query($db, $query);
-  	if ($room_no1==$results) 
+  	if ($room_no==$results) 
     {      
-  	$query = "INSERT INTO laundry_table (Room, Clothes_no, Instruction)
-  			  VALUES( '$room_no' ,'$clothes_no', '$instruct')";
-  	mysqli_query($db, $query);
+  	$query2 = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
+  			  VALUES('$reg_no' ,'$room_no' ,'$clothes_no', '$instruct')";
+  	mysqli_query($db, $query2);
     }
   	$_SESSION['username'] = $username;
   	$_SESSION['success'] = "Your request has been sent!";
