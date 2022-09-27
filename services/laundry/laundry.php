@@ -62,12 +62,12 @@
                     <br />                    
                     <!-- <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value="<?php $room_no ?>"> -->
                     <br /><br /><br><br>
-                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php  echo $Clothes_no ?>">
+                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value="<?php  echo $Clothes_no; ?>">
                     <br /><br /><br><br>
-                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value="<?php echo $Instruction ?>">
+                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value="<?php echo $Instruction; ?>">
                     <br /><br /><br>
                     <label for="submit"></label>
-                    <input type="submit" name="laundry_submit" id="submit" value="REGISTER">
+                    <button name="laundry_submit" id="submit" value="REGISTER">submit</button>
                 </fieldset>
             </form>
         </div>
@@ -77,5 +77,5 @@
 </html>
 <?php
 $query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
-  			  VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no', '$Instruction')";
+  			  VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
   	mysqli_query($db, $query);?>
