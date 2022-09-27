@@ -5,7 +5,7 @@
     font-family: "times";
 }
 .s2{
-    background-image:  url(../media/002.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../media/002.jpg);
 }
 section{
     height: 100vh;

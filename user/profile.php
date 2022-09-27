@@ -29,11 +29,20 @@
   $result = mysqli_query($db, $regno);
   $row['regno'] = mysqli_fetch_assoc($result);
   ?>
+  <?php
+  $regno1 = implode($row['regno']);
+  ?>
       <?php 
   $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
   $room= "SELECT room FROM userinfo WHERE username= '$_SESSION[username]' LIMIT 1";
   $result = mysqli_query($db, $room);
   $row['room'] = mysqli_fetch_assoc($result);
+  ?>
+      <?php 
+  $db = mysqli_connect('localhost', 'root', '', 'hostel_data'); 
+  $Clothes= "SELECT Clothes_no FROM laundry_table WHERE Registration_No= '$regno1' LIMIT 1";
+  $result = mysqli_query($db, $Clothes);
+  $row['laundry'] = mysqli_fetch_assoc($result);
   ?>
 <!DOCTYPE html>
 <html>
@@ -63,19 +72,24 @@
   <div class="wrapper">
     <div class="userBox">
       <div class="header">
-        <p><?php echo implode($row['regno']) ?></p>
+        <p>Reg.no:  <?php echo implode($row['regno']) ?></p>
       </div>
       <span class="userPic"></span>
       <div class="middle">
         <div class="middleText"><br><br><br><br>
-        <p> <?php echo $_SESSION['username'] ?></p>
-        <p><?php echo implode($row['mobile']) ?></p>
-        <p><?php echo implode($row['email']) ?></p>
+        <p class="tospecify"> <?php echo $_SESSION['username'] ?></p>
+        <p class="specify">Name of the Student</p>
+        <p class="tospecify"><?php echo implode($row['mobile']) ?></p>
+        <p class="specify">MObile Number</p>
+        <p class="tospecify"><?php echo implode($row['email']) ?></p>
+        <p class="specify">Email ID of the Student</p>
         </div>
       </div>
       <div class="footer">
         <ul><br><br><br>
           <li><span><?php echo implode($row['room']) ?></span>Room No</li>
+          <li><span><?php echo implode($row['laundry']) ?></span>most recent clothes sent to laundry</li>
+
           <!-- <li><span>1.2m</span>Followers</li>
           <li><span>62</span>Following</li> -->
         </ul>
