@@ -62,8 +62,7 @@
                             <i class="fa-solid fa-person-digging"></i>
                         </div>
                         <h3>Room service</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
+                        <p></p>
                         </a>
                     </div>
                 </div>
@@ -74,9 +73,7 @@
                             <i class="fa-solid fa-shirt"></i>
                         </div>
                         <h3>Laundry</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
-                        </a>
+                        <p>Register your laundry here</p>
                     </div>
                 </div>
                 <div class="column">
@@ -86,8 +83,7 @@
                             <i class="fa-solid fa-dumbbell"></i>
                         </div>
                         <h3>Gym service</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
+                        <p>*Backend incomplete due to time constraint*</p>
                         </a>
                     </div>
                 </div>
@@ -97,8 +93,7 @@
                             <i class="fa-solid fa-house-medical"></i>
                         </div>
                         <h3>Doctor's appointment</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
+                        <p>*Will be created on User Demand*</p>
                     </div>
                 </div>
                 <div class="column">
@@ -107,8 +102,7 @@
                             <i class="fa-solid fa-calendar"></i>
                         </div>
                         <h3>Notice & Event</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
+                        <p>*Will be created on User Demand*</p>
                     </div>
                 </div>
                 <div class="column">
@@ -118,8 +112,7 @@
                             <i class="fa-solid fa-comment"></i>
                         </div>
                         <h3>Complain</h3>
-                        <p>Wikipedia is hosted by the Wikimedia Foundation,a non-profit organization <br> also hosts a
-                            range of other projects.</p>
+                        <p>*Complain visiability will be avaliable to admin login*</p>
                         </a>
                     </div>
                 </div>

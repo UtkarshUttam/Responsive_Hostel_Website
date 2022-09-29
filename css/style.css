@@ -271,7 +271,9 @@ a:hover{
   background-color: #eee;
   display: flex;
   flex-direction: column;
+  padding: 3rem ;
   align-items: center;
+  text-align: center;
   justify-content: center;
   transition: transform 0.5s;
 }
@@ -338,6 +340,7 @@ a:hover{
 .job {
   font-family: 'Montserrat', sans-serif;
   color: #777;
+  text-align: center;
   font-weight: 300;
 }
 
